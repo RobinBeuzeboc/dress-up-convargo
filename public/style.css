@@ -7,18 +7,26 @@
   color:black;
 	background-image: url("img/convargo.jpg");
 	background-size: cover;
-	margin:auto;
+	height: auto;
+	background-repeat: no-repeat;
+
+	background-color: DimGray;
+	text-align: center;
+	text-emphasis-color: white;
+}
+
+#home-page{
+	color:black;
+	background-image: url("img/trucks.jpg");
+	background-size: cover;
+	height: auto;
 	background-repeat: no-repeat;
 
 	background-color: DimGray;
 	text-align: center;
 	text-emphasis-color: white;
 
-
-
-
 }
-
 
 /*inputs*/
 input{
