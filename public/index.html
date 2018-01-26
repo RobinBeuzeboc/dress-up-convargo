@@ -2,13 +2,33 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Convargo</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+
+
+
   </head>
   <body id="index-page">
+    <img src "img/convargo.jpg" id="back">
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+     <ul class="navbar-nav">
+       <li class="nav-item">
+         <a class="nav-link" href="home.html">Home</a>
+       </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Compute your fees</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="info.html">About us</a>
+        </li>
+      </ul>
+    </nav>
 
     <div class="description">
       <h2>You have the possibility to compute the total cost of your delivery, don't forget to fill all the boxes!
@@ -19,47 +39,64 @@
 
       <div class="container">
       <div class="row">
+
         <div class="col">
           <div id="trucker">
+            &nbsp;
+
             <h3>Trucker</h3>
             <div>
               <p>Name:</p>
               <input class="name" type="text" placeholder="Name" />
+              <p></p>
             </div>
             <div>
-              <p>Price per kilometer:</p>
+              <p>Price by kilometer:</p>
               <input class="price-by-km" type="number" placeholder="Price by km" />
+              <p></p>
             </div>
             <div>
-              <p>Price per cubic:</p>
+              <p>Price by cubic:</p>
               <input class="price-by-cubic" type="number" placeholder="Price by m3" />
+              <p></p>
             </div>
+
             <p>
-              Deductible option:
             </p>
+
             <input class="option" type="checkbox" placeholder="Deductible option" />
+
+            <label for="deductible">Deductible option</label>
+
           </div>
         </div>
         <div class="col">
           <div id="shipper">
+            &nbsp;
             <h3>Shipper</h3>
             <div>
               <p>Name:</p>
               <input class="name" type="text" placeholder="Name" />
+                <p></p>
             </div>
             <div>
               <p>Distance:</p>
               <input class="distance" type="number" placeholder="Distance in km" />
+                <p></p>
             </div>
             <div>
               <p>Volume:</p>
               <input class="volume" type="number" placeholder="Volume in m3" />
+                <p></p>
             </div>
           </div>
-          <button id="compute">Compute</button>
+          <button class="button" id="compute"><span>Compute</span></button>
         </div>
         <div class="col">
+          &nbsp;
           <h3>Prices</h3>
+          &nbsp;
+          <p></p>
           <div id="actors"></div>
         </div>
       </div>
